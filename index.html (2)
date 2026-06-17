@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrinho - Estrutura Base</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" /> 
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="conteiner topo-grade">
+      <div class="topo-esquerda">
+        <h1>Agrinho<br>2026</h1>
+        <p class="frase">
+           "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente."
+        </p>
+      </div>
+      <div class="topo-direita">
+        <img src="./assets/logo-agrinho.jpg" alt="Logo ou imagem principal">
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="sobreposicao">
+      <div class="conteiner banner-conteudo">
+        <h2>PARANÁ</h2>
+        <p>O agronegócio do Paraná é um dos pilares da economia brasileira, destacando-se pela alta
+          produtividade e pelo equilíbrio entre produção e preservação ambiental.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa-texto">
+    <div class="conteiner">
+      <p> O Paraná é frequentemente citado como uma referência global em sustentabilidade no agronegócio, equilibrando alta produtividade com a preservação de recursos naturais. Em 2026, o estado mantém o título (conquistado por anos consecutivos) de estado mais sustentável do Brasil segundo rankings de competitividade e práticas ESG.</p>
+    </div>
+  </section>
+
+  <section class="cartoes">
+    <article class="cartao cartao-1">
+      <div class="bolha gatilho-video" data-id-video="graos" data-url-video="linkdoYouTube?autoplay=1"  >Paraná amplia participação na produção nacional de grãos</div>
+    </article>
+    <article class="cartao cartao-2">
+      <div class="bolha gatilho-video" data-id-video="sustentavel" data-url-video="https://www.youtube.com/embed/W60i5AXB_xk?si=86JGva4tLfVAZhiq?autoplay=1">Paraná é eleito o estado mais sustentável do Brasil pela 4ª vez consecutiva</div>
+    </article>
+    <article class="cartao cartao-3">
+      <div class="bolha">Cooperativismo forte impulsiona a economia e gera milhares de empregos no campo</div>
+    </article>
+  </section>
+
+  <section class="noticias">
+    <div class="noticias-esquerda">
+      <img src="./assets/fundo-5.jpg" alt="Imagem da secao de noticias">
+      <h3>Destaques do Agro Forte</h3>
+    </div>
+    <aside class="noticias-direita">
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="tecnologia"
+        data-titulo-noticia="Inovação no Campo"
+        data-imagem-notica="./assets/logo-agrinho.jpg"
+        data-url-noticia="https://www.aen.pr.gov.br/"
+        >
+          Tecnologia e conectividade rural transformam a gestão das lavouras paranaenses
+        </button>
+      </h4>
+      <p>O uso de drones, sensores e inteligência artificial ajuda o produtor a economizar recursos e aumentar a eficiência da colheita.</p>
+
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="exportacao"
+        data-titulo-noticia="Liderança em Exportações"
+        data-imagem-notica="./assets/meio-ambiente.jpg"
+        data-url-noticia="https://www.aen.pr.gov.br/"
+        >
+          Paraná se consolida como o maior exportador de carne de frango do Brasil
+        </button>
+      </h4>
+      <p>Com rigoroso controle sanitário e alta qualidade, os produtos do agro paranaense chegam a mais de 150 países.</p>
+      
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="sustentabilidade-pratica"
+        data-titulo-noticia="Preservação Ambiental"
+        data-imagem-noticia="./assets/logo-agrinho.jpg"
+        data-url-noticia="https://www.aen.pr.gov.br/"
+        >
+          Programas de conservação de solo e água garantem o futuro das próximas gerações
+        </button>
+      </h4>
+      <p>Produtores investem no plantio direto e na recuperação de matas ciliares para proteger a biodiversidade local.</p>
+   
+    </aside>
+  </section>
+
+  <section class="feira">
+    <div class="feira-esquerda">
+      <img src="./assets/fundo-6.png" alt="Imagem da feira">
+      <p>Grandes feiras e eventos tecnológicos no Paraná conectam o produtor rural com as principais inovações e tendências do mercado global do agronegócio.</p>
+    </div>
+    <div class="feira-direita">
+      <img src="./assets/link-1.png" alt="Imagem 1">
+      <img src="./assets/link-2.png" alt="Imagem 2">
+      <img src="./assets/link-3.png" alt="Imagem 3">
+      <img src="./assets/link-4.png" alt="Imagem 4">
+    </div>
+  </section>
+
+  <section class="chamada-final">
+    <div class="conteiner chamada-final-conteiner">
+      <h3>Faça parte dessa evolução. Conheça as práticas que tornam nosso agro forte e sustentável!</h3>
+      <button type="button" class="botao-chamada-final">Acessar</button>
+    </div>
+  </section>
+
+  <div class="modal-video" id="modal-video" aria-hidden="true">
+    <div class="modal-video-conteudo" role="dialog" aria-modal="true" aria-label="Vídeo">
+      <button class="modal-video-fechar" id="fechar-modal-video" type="button" aria-label="Fechar vídeo">×</button>
+      <iframe
+        id="frame-video"
+        src=""
+        title="Vídeo do Paraná"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="transcricao-video">
+        <h4>Transcrição do vídeo</h4>
+        <p id="texto-transcricao-video">Selecione um vídeo para ver a transcrição.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-noticia" id="modal-noticia" aria-hidden="true">
+    <div class="modal-noticia-conteudo" role="dialog" aria-modal="true" aria-label="Notícia">
+      <button class="modal-noticia-fechar" id="fechar-modal-noticia" type="button" aria-label="Fechar notícia">×</button>
+      <img id="imagem-modal-noticia" src="" alt="" />
+      <h4 id="titulo-modal-noticia"></h4>
+      <div class="acoes-noticia">
+        <button class="botao-ler-noticia" id="botao-ler-noticia" type="button">Ler notícia</button>
+        <button class="botao-link-noticia" id="botao-link-noticia" type="button">Ir para notícia</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-quiz" id="modal-quiz" aria-hidden="true">
+    <div class="modal-quiz-conteudo" role="dialog" aria-modal="true" aria-label="Mini quiz">
+      <button class="modal-quiz-fechar" id="fechar-modal-quiz" type="button" aria-label="Fechar quiz">×</button>
+
+      <div class="quiz" id="mini-quiz">
+        <div class="quiz-conteiner">
+          <div class="quiz-introducao">
+            <h2>Mini Quiz do Agrinho</h2>
+            <p>
+              Teste seus conhecimentos sobre o agronegócio sustentável do Paraná. São 5 perguntas rápidas.
+            </p>
+          </div>
+
+          <form class="formulario-quiz" id="formulario-quiz">
+            <div class="progresso-quiz">
+              <span id="passo-quiz">1</span>/<span id="total-quiz">5</span>
+            </div>
+
+            <div class="etapas-quiz">
+              <div class="etapa-quiz ativo" data-step="1">
+                <h3 class="titulo-pergunta-quiz">1) Qual é o principal destaque do agronegócio do Paraná citado no projeto?</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q1" value="a" /> Alta produtividade com preservação ambiental
+                  </label>
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q1" value="b" /> Equilíbrio entre produção e preservação ambiental
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q1" value="c" /> Foco exclusivo em exportação de grãos
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="2">
+                <h3 class="titulo-pergunta-quiz">2) Segundo o conteúdo, o Paraná é referência global em:</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q2" value="a" /> Sustentabilidade no agronegócio
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q2" value="b" /> Pesca industrial
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q2" value="c" /> Mineração de ferro
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="3">
+                <h3 class="titulo-pergunta-quiz">3) O evento da feira do produtor acontece:</h3>
+                <div class="opcoes-quiz">
+                  <label class
